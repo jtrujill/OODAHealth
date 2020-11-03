@@ -14,7 +14,7 @@
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack/webpack.dev.js",
+    "start": "webpack serve --mode development --env development --config webpack/webpack.dev.js",
     "prebuild": "rimraf ./dist -Recurse -Force",
     "build": "cross-env ENV=prod webpack --config webpack/webpack.prod.js",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,scss,css,md,json}\""
