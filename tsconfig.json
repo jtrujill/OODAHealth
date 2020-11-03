@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/",
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": ["es2018", "dom"],
+    "jsx": "react",
+    "allowJs": true,
+    "rootDir": "src",
+    "sourceMap": true,
+    "importsNotUsedAsValues": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "preserveConstEnums": true
+  },
+  "exclude": ["node_modules", "dist", "scripts", "webpack"]
+}
