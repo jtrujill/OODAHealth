@@ -14,7 +14,12 @@ module.exports = merge(common, {
     host: '0.0.0.0',
     disableHostCheck: true,
     historyApiFallback: true,
-    contentBase: path.join(__dirname, '..', 'src', 'assets')
+    contentBase: path.join(__dirname, '..', 'src', 'assets'),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
+    }
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
